@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="填写下列信息增加图书"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_add"
+        android:layout_marginTop="10dp"
+        android:hint="请输入书籍ID"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/et_bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_id"
+        android:layout_marginTop="10dp"
+        android:hint="请输入书名"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/et_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_bname"
+        android:layout_marginTop="10dp"
+        android:hint="请输入书籍作者"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/et_publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_author"
+        android:layout_marginTop="10dp"
+        android:hint="请输入书籍出版社"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_publisher"
+        android:layout_marginTop="10dp"
+        android:hint="请输入书籍描述"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_description"
+        android:layout_marginTop="250dp"
+        android:text="增加"
+        android:textSize="24sp"/>
+
+
+</RelativeLayout>
